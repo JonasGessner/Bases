@@ -45,10 +45,10 @@ internal typealias EncodedChar = UInt8
 
 internal let paddingCharacter: EncodedChar = 61
 private let encodingTable: [EncodedChar] = [
-    65, 66, 67, 68, 69, 70, 71, 72,
-    73, 74, 75, 76, 77, 78, 79, 80,
-    81, 82, 83, 84, 85, 86, 87, 88,
-    89, 90, 50, 51, 52, 53, 54, 55,
+    50, 51, 52, 53, 54, 55, 65, 66,
+    67, 68, 69, 70, 71, 72, 73, 74,
+    75, 76, 77, 78, 79, 80, 81, 82,
+    83, 84, 85, 86, 87, 88, 89, 90,
 ]
 
 internal func character(encoding quintet: Quintet) -> EncodedChar {
