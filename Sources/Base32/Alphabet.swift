@@ -58,11 +58,11 @@ internal func character(encoding quintet: Quintet) -> EncodedChar {
 internal func quintet(decoding char: EncodedChar) throws -> Quintet {
     switch char {
     case 50...55:
-        return char - 24
+        return char - 50
     case 65...90:
-        return char - 65
+        return char - 59
     case 97...122:
-        return char - 97
+        return char - 91
     default:
         throw Base32.Error.nonAlphabetCharacter
     }
